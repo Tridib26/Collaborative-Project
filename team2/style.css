@@ -1,0 +1,49 @@
+
+        #parent{
+            margin: auto;
+            padding: 25px;  
+        }
+        p{
+            color: rgb(83, 82, 82);
+            font-size: 18px;
+            margin-top: -12px;
+        }
+        h3{
+            margin-top: 10px;
+        }
+        .card{
+            box-shadow: 1px 1px 7px -4px;
+            padding-top: 10px;
+            border-radius: 8px;
+            background-color: rgb(241, 253, 249);
+        }
+        
+        div>.logo{
+            width: 150px;
+            margin-top: -15px;
+        }
+        #parent{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 25px;
+            text-align: center; 
+        }
+        
+        @media screen and (min-width:768px) and (max-width:1024px)
+        {
+            #parent{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                justify-content: center;
+            }
+        }
+
+        @media screen and (min-width:200px) and (max-width:767px)
+        {
+            #parent{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                justify-content: center;
+            }
+        }
+       
